@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Richard Rodrigues | Portfólio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:22px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+border-bottom:1px solid rgba(0,255,100,0.15);
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#00ff88;
+text-shadow:0 0 10px #00ff88;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:28px;
+transition:.3s;
+font-size:15px;
+}
+
+nav a:hover{
+color:#00ff88;
+}
+
+.inicio{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:120px 20px;
+background:
+radial-gradient(circle at top right,#00ff8830,transparent 35%),
+#050505;
+}
+
+.inicio h1{
+font-size:70px;
+margin-bottom:15px;
+}
+
+.inicio span{
+color:#00ff88;
+text-shadow:0 0 18px #00ff88;
+}
+
+.inicio p{
+max-width:800px;
+margin:auto;
+font-size:21px;
+color:#cfcfcf;
+line-height:1.7;
+margin-bottom:35px;
+}
+
+.botao{
+display:inline-block;
+padding:10px 18px;
+margin-top:12px;
+background:#00ff8888;
+color:white;
+font-weight:600;
+font-size:14px;
+text-decoration:none;
+border-radius:8px;
+transition:.3s;
+border:1px solid rgba(0,0,0,0.5);
+}
+
+.botao:hover{
+transform:translateY(-3px);
+background:#148558;
+}
+
+section{
+padding:100px 8%;
+}
+
+.titulo{
+text-align:center;
+font-size:40px;
+margin-bottom:45px;
+color:#00ff88;
+text-shadow:0 0 10px #00ff88;
+}
+
+.sobre-texto{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.9;
+font-size:19px;
+color:#d1d1d1;
+}
+
+.habilidades{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:22px;
+}
+
+.habilidade{
+background:#101010;
+padding:25px;
+text-align:center;
+border-radius:12px;
+border:1px solid rgba(0,255,136,0.15);
+transition:.3s;
+}
+
+.habilidade:hover{
+transform:translateY(-8px);
+box-shadow:0 0 15px rgba(0,255,136,0.25);
+}
+
+.habilidade i{
+font-size:42px;
+color:#00ff88;
+margin-bottom:15px;
+display:block;
+}
+
+.projetos-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:28px;
+}
+
+.cartao{
+background:#101010;
+border-radius:14px;
+overflow:hidden;
+transition:.3s;
+border:1px solid rgba(0,255,136,0.15);
+}
+
+.cartao:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px rgba(0,255,136,0.25);
+}
+
+.video-projeto{
+width:100%;
+height:210px;
+object-fit:cover;
+display:block;
+background:#000;
+}
+
+.conteudo{
+padding:24px;
+}
+
+.conteudo h3{
+margin-bottom:10px;
+}
+
+.conteudo p{
+color:#cfcfcf;
+line-height:1.6;
+}
+
+.redes{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.redes a{
+width:70px;
+height:70px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#101010;
+color:#00ff88;
+font-size:30px;
+text-decoration:none;
+border:1px solid rgba(0,255,136,0.2);
+transition:.3s;
+}
+
+.redes a:hover{
+transform:translateY(-8px);
+box-shadow:0 0 18px rgba(0,255,136,0.35);
+}
+
+footer{
+text-align:center;
+padding:35px;
+color:#8b8b8b;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav a{
+margin:0 8px;
+font-size:14px;
+}
+
+.inicio h1{
+font-size:45px;
+}
+
+.inicio p{
+font-size:18px;
+}
+
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Richard</div>
+
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#habilidades">Conhecimentos</a>
+<a href="#projetos">Projetos</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
+<section class="inicio">
+
+<div>
+
+<h1>Richard <span>Rodrigues</span></h1>
+
+<p>
+Estudante de Engenharia de Software em transição para a área de Dados,
+com base sólida em programação, sistemas web e foco em análise de dados.
+</p>
+
+<a href="#projetos" class="botao">Ver Projetos</a>
+
+</div>
+
+</section>
+
+<section id="sobre">
+
+<h2 class="titulo">Sobre Mim</h2>
+
+<p class="sobre-texto">
+Atualmente curso Engenharia de Software e desenvolvo projetos com Python, Java, Django, Flask e Spring Boot.
+Meu objetivo profissional é atuar com Dados, unindo tecnologia, lógica e tomada de decisão baseada em informação.
+</p>
+
+</section>
+
+<section id="habilidades">
+
+<h2 class="titulo">Conhecimentos</h2>
+
+<div class="habilidades">
+
+<div class="habilidade"><i class="fab fa-python"></i>Python</div>
+<div class="habilidade"><i class="fab fa-java"></i>Java</div>
+<div class="habilidade"><i class="fas fa-database"></i>SQL</div>
+<div class="habilidade"><i class="fas fa-leaf"></i>Spring Boot</div>
+<div class="habilidade"><i class="fas fa-code"></i>Django</div>
+<div class="habilidade"><i class="fas fa-flask"></i>Flask</div>
+<div class="habilidade"><i class="fab fa-github"></i>GitHub</div>
+<div class="habilidade"><i class="fab fa-html5"></i>HTML/CSS</div>
+
+</div>
+
+</section>
+
+<section id="projetos">
+
+<h2 class="titulo">Projetos</h2>
+
+<div class="projetos-grid">
+
+<div class="cartao">
+<video class="video-projeto" autoplay muted loop playsinline>
+<source src="videos/gestorpro.mp4" type="video/mp4">
+</video>
+<div class="conteudo">
+<h3>Sistema de Estoque</h3>
+<p>Projeto em Django com controle de estoque.</p>
+<a href="https://github.com/R1chxrdd/GestorPro" target="_blank" class="botao">Ver Repositório</a>
+</div>
+</div>
+
+<div class="cartao">
+<video class="video-projeto" autoplay muted loop playsinline>
+<source src="videos/museu.mp4" type="video/mp4">
+</video>
+<div class="conteudo">
+<h3>Museu Flask</h3>
+<p>Aplicação acadêmica desenvolvida em Flask.</p>
+<a href="https://github.com/R1chxrdd/Museu" target="_blank" class="botao">Ver Repositório</a>
+</div>
+</div>
+
+<div class="cartao">
+<video class="video-projeto" autoplay muted loop playsinline>
+<source src="videos/frontend.mp4" type="video/mp4">
+</video>
+<div class="conteudo">
+<h3>Front-End</h3>
+<p>Páginas modernas utilizando HTML e CSS.</p>
+<a href="https://r1chxrdd.github.io/Vitrine-Front-End/" target="_blank" class="botao">Ver Site</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="contato">
+
+<h2 class="titulo">Contato</h2>
+
+<div class="redes">
+
+<a href="https://github.com/R1chxrdd" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/richard-rodrigues-23a77b2bb/?skipRedirect=true" target="_blank">
+<i class="fab fa-linkedin-in"></i>
+</a>
+
+</div>
+
+</section>
+
+<footer>
+Desenvolvido por Richard Rodrigues
+</footer>
+
+</body>
+</html>
